@@ -35,15 +35,15 @@ int main()
             printf ("TGS0001              02             02\n");
             printf ("Total de creditos: %i\n", creditos);
             printf ("Total de disciplinas: %i\n", disciplinas);
-            if (validacao == 'S' || validacao == 's' && vagt == 'S' || vagt == 's' && vtgs == 'S' || vtgs == 's')
+            if ((validacao == 'S' || validacao == 's') && (vagt == 'S' || vagt == 's') && (vtgs == 'S' || vtgs == 's'))
             {
                 printf ("Pedidos de validacao: AGT TGS\n");
             }
-            else if (validacao == 'S' || validacao == 's' && vagt == 'S' || vagt == 's' && vtgs == 'N' || vtgs == 'n')
+            else if ((validacao == 'S' || validacao == 's') && (vagt == 'S' || vagt == 's') && (vtgs == 'N' || vtgs == 'n'))
             {
                 printf ("Pedidos de validacao: AGT\n");
             }
-            else if (validacao == 'S' || validacao == 's' && vagt == 'N' || vagt == 'n' && vtgs == 'S' || vtgs == 's')
+            else if ((validacao == 'S' || validacao == 's') && (vagt == 'N' || vagt == 'n') && (vtgs == 'S' || vtgs == 's'))
             {
                 printf ("Pedidos de validacao: TGS\n");
             }
@@ -99,14 +99,14 @@ int main()
             printf ("ALI0001              04             00              GAN0001\n");
             printf ("CDI0001              06             00              ICD0001\n");
             printf ("ECC0001              02             02\n");
-            if (fALI == 'N' || fALI == 'n' && fCDI == 'N' || fCDI == 'n' && fECC == 'N' || fECC == 'n')
+            if ((fALI == 'N' || fALI == 'n') && (fCDI == 'N' || fCDI == 'n') && (fECC == 'N' || fECC == 'n'))
             {
                 printf ("Sua matricula cai constar como trancada.\n");
                 printf ("Eh preciso escolher ao menos uma disciplina.\n");
                 printf ("Total de creditos: %i", creditos);
                 printf ("Total de disciplinas: %i", disciplinas);
             }
-            else if (fALI == 'S' || fALI == 's' && vGAN == 'N' || vGAN == 'n' && fCDI == 'N' || fCDI == 'n' && fECC == 'N' || fECC == 'n')
+            else if ((fALI == 'S' || fALI == 's') && (vGAN == 'N' || vGAN == 'n') && (fCDI == 'N' || fCDI == 'n') && (fECC == 'N' || fECC == 'n'))
             {
                 printf ("Sua matricula cai constar como trancada.\n");
                 printf ("Eh preciso escolher ao menos uma disciplina.\n");
