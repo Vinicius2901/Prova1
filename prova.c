@@ -108,7 +108,7 @@ int main()
             }
             else if ((fALI == 'S' || fALI == 's') && (vGAN == 'N' || vGAN == 'n') && (fCDI == 'N' || fCDI == 'n') && (fECC == 'N' || fECC == 'n'))
             {
-                printf ("Sua matricula cai constar como trancada.\n");
+                printf ("Sua matricula vai constar como trancada.\n");
                 printf ("Eh preciso escolher ao menos uma disciplina.\n");
                 printf ("Total de creditos: %i", creditos);
                 printf ("Total de disciplinas: %i", disciplinas);
