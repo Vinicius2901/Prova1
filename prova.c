@@ -61,7 +61,7 @@ int main()
             {
                 printf ("Ja fez GAN? S/N\n");
                 scanf (" %c", &vGAN);
-                if (vGAN == 'S')
+                if (vGAN == 'S' || vGAN == 's')
                 {
                     creditos = 4;
                     disciplinas = 1;
@@ -78,7 +78,7 @@ int main()
             }
             printf ("Vai fazer CDI? S/N\n");
             scanf (" %c", &fCDI);
-            if (fCDI == 'N')
+            if (fCDI == 'N' || fCDI == 'n')
             {
                 printf ("Vai validar CDI? S/N\n");
                 scanf (" %c", &vCDI);
